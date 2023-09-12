@@ -7481,3 +7481,1227 @@ Increase the number of iterations (max_iter) or scale the data as shown in:
 2023-09-09 22:28:05,967:INFO:Preloading libraries
 2023-09-09 22:28:05,970:INFO:Set up data.
 2023-09-09 22:28:05,984:INFO:Set up index.
+2023-09-12 16:52:09,638:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-12 16:52:09,638:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-12 16:52:09,638:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-12 16:52:09,638:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-12 16:52:09,766:INFO:PyCaret RegressionExperiment
+2023-09-12 16:52:09,766:INFO:Logging name: reg-default-name
+2023-09-12 16:52:09,766:INFO:ML Usecase: MLUsecase.REGRESSION
+2023-09-12 16:52:09,766:INFO:version 3.0.4
+2023-09-12 16:52:09,766:INFO:Initializing setup()
+2023-09-12 16:52:09,766:INFO:self.USI: 7f39
+2023-09-12 16:52:09,766:INFO:self._variable_keys: {'logging_param', 'seed', '_ml_usecase', 'y', 'transform_target_param', 'y_test', 'n_jobs_param', 'fold_shuffle_param', 'html_param', 'pipeline', 'USI', 'idx', 'target_param', 'y_train', 'memory', 'exp_id', 'exp_name_log', 'fold_groups_param', 'gpu_n_jobs_param', 'X_train', 'gpu_param', 'X_test', 'X', 'fold_generator', 'data', 'log_plots_param', '_available_plots'}
+2023-09-12 16:52:09,766:INFO:Checking environment
+2023-09-12 16:52:09,766:INFO:python_version: 3.10.12
+2023-09-12 16:52:09,766:INFO:python_build: ('main', 'Jun 11 2023 05:26:28')
+2023-09-12 16:52:09,766:INFO:machine: x86_64
+2023-09-12 16:52:09,766:INFO:platform: Linux-5.15.90.1-microsoft-standard-WSL2-x86_64-with-glibc2.35
+2023-09-12 16:52:09,766:INFO:Memory: svmem(total=7997599744, available=6347522048, percent=20.6, used=1396178944, free=5388357632, active=550420480, inactive=1665028096, buffers=52858880, cached=1160204288, shared=3264512, slab=129003520)
+2023-09-12 16:52:09,767:INFO:Physical Core: 6
+2023-09-12 16:52:09,767:INFO:Logical Core: 12
+2023-09-12 16:52:09,767:INFO:Checking libraries
+2023-09-12 16:52:09,767:INFO:System:
+2023-09-12 16:52:09,767:INFO:    python: 3.10.12 (main, Jun 11 2023, 05:26:28) [GCC 11.4.0]
+2023-09-12 16:52:09,767:INFO:executable: /usr/bin/python3
+2023-09-12 16:52:09,767:INFO:   machine: Linux-5.15.90.1-microsoft-standard-WSL2-x86_64-with-glibc2.35
+2023-09-12 16:52:09,767:INFO:PyCaret required dependencies:
+2023-09-12 16:52:09,771:INFO:                 pip: 22.0.2
+2023-09-12 16:52:09,771:INFO:          setuptools: 59.6.0
+2023-09-12 16:52:09,771:INFO:             pycaret: 3.0.4
+2023-09-12 16:52:09,771:INFO:             IPython: 8.14.0
+2023-09-12 16:52:09,771:INFO:          ipywidgets: 8.1.0
+2023-09-12 16:52:09,771:INFO:                tqdm: 4.65.0
+2023-09-12 16:52:09,771:INFO:               numpy: 1.24.4
+2023-09-12 16:52:09,771:INFO:              pandas: 1.5.3
+2023-09-12 16:52:09,771:INFO:              jinja2: 3.1.2
+2023-09-12 16:52:09,771:INFO:               scipy: 1.11.1
+2023-09-12 16:52:09,771:INFO:              joblib: 1.3.1
+2023-09-12 16:52:09,771:INFO:             sklearn: 1.2.2
+2023-09-12 16:52:09,771:INFO:                pyod: 1.1.0
+2023-09-12 16:52:09,771:INFO:            imblearn: 0.11.0
+2023-09-12 16:52:09,771:INFO:   category_encoders: 2.6.2
+2023-09-12 16:52:09,771:INFO:            lightgbm: 3.3.5
+2023-09-12 16:52:09,771:INFO:               numba: 0.57.1
+2023-09-12 16:52:09,771:INFO:            requests: 2.28.2
+2023-09-12 16:52:09,771:INFO:          matplotlib: 3.7.2
+2023-09-12 16:52:09,771:INFO:          scikitplot: 0.3.7
+2023-09-12 16:52:09,771:INFO:         yellowbrick: 1.5
+2023-09-12 16:52:09,771:INFO:              plotly: 5.15.0
+2023-09-12 16:52:09,771:INFO:    plotly-resampler: Not installed
+2023-09-12 16:52:09,771:INFO:             kaleido: 0.2.1
+2023-09-12 16:52:09,771:INFO:           schemdraw: 0.15
+2023-09-12 16:52:09,771:INFO:         statsmodels: 0.14.0
+2023-09-12 16:52:09,771:INFO:              sktime: 0.22.0
+2023-09-12 16:52:09,771:INFO:               tbats: 1.1.3
+2023-09-12 16:52:09,771:INFO:            pmdarima: 2.0.3
+2023-09-12 16:52:09,771:INFO:              psutil: 5.9.5
+2023-09-12 16:52:09,771:INFO:          markupsafe: 2.1.3
+2023-09-12 16:52:09,771:INFO:             pickle5: Not installed
+2023-09-12 16:52:09,771:INFO:         cloudpickle: 2.2.1
+2023-09-12 16:52:09,771:INFO:         deprecation: 2.1.0
+2023-09-12 16:52:09,771:INFO:              xxhash: 3.3.0
+2023-09-12 16:52:09,771:INFO:           wurlitzer: 3.0.3
+2023-09-12 16:52:09,771:INFO:PyCaret optional dependencies:
+2023-09-12 16:52:09,797:INFO:                shap: Not installed
+2023-09-12 16:52:09,797:INFO:           interpret: Not installed
+2023-09-12 16:52:09,797:INFO:                umap: Not installed
+2023-09-12 16:52:09,797:INFO:    pandas_profiling: Not installed
+2023-09-12 16:52:09,797:INFO:  explainerdashboard: Not installed
+2023-09-12 16:52:09,797:INFO:             autoviz: Not installed
+2023-09-12 16:52:09,797:INFO:           fairlearn: Not installed
+2023-09-12 16:52:09,797:INFO:          deepchecks: Not installed
+2023-09-12 16:52:09,797:INFO:             xgboost: 1.7.6
+2023-09-12 16:52:09,797:INFO:            catboost: 1.2
+2023-09-12 16:52:09,797:INFO:              kmodes: Not installed
+2023-09-12 16:52:09,797:INFO:             mlxtend: Not installed
+2023-09-12 16:52:09,797:INFO:       statsforecast: 1.4.0
+2023-09-12 16:52:09,797:INFO:        tune_sklearn: Not installed
+2023-09-12 16:52:09,797:INFO:                 ray: 2.3.1
+2023-09-12 16:52:09,797:INFO:            hyperopt: 0.2.7
+2023-09-12 16:52:09,797:INFO:              optuna: Not installed
+2023-09-12 16:52:09,797:INFO:               skopt: Not installed
+2023-09-12 16:52:09,797:INFO:              mlflow: Not installed
+2023-09-12 16:52:09,797:INFO:              gradio: Not installed
+2023-09-12 16:52:09,797:INFO:             fastapi: Not installed
+2023-09-12 16:52:09,797:INFO:             uvicorn: Not installed
+2023-09-12 16:52:09,797:INFO:              m2cgen: Not installed
+2023-09-12 16:52:09,797:INFO:           evidently: Not installed
+2023-09-12 16:52:09,797:INFO:               fugue: Not installed
+2023-09-12 16:52:09,797:INFO:           streamlit: Not installed
+2023-09-12 16:52:09,797:INFO:             prophet: Not installed
+2023-09-12 16:52:09,797:INFO:None
+2023-09-12 16:52:09,797:INFO:Set up data.
+2023-09-12 16:52:10,107:INFO:Set up train/test split.
+2023-09-12 16:52:10,219:INFO:Set up index.
+2023-09-12 16:52:10,226:INFO:Set up folding strategy.
+2023-09-12 16:52:10,227:INFO:Assigning column types.
+2023-09-12 16:52:10,257:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2023-09-12 16:52:10,257:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2023-09-12 16:52:10,261:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-09-12 16:52:10,265:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-09-12 16:52:10,353:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-09-12 16:52:10,393:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-09-12 16:52:10,394:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 16:52:10,555:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 16:52:10,624:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2023-09-12 16:52:10,628:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-09-12 16:52:10,632:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-09-12 16:52:10,739:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-09-12 16:52:10,779:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-09-12 16:52:10,780:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 16:52:10,782:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 16:52:10,783:INFO:Engine successfully changes for model 'lasso' to 'sklearn'.
+2023-09-12 16:52:10,787:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-09-12 16:52:10,791:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-09-12 16:52:10,874:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-09-12 16:52:10,915:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-09-12 16:52:10,915:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 16:52:10,917:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 16:52:10,922:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-09-12 16:52:10,926:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-09-12 16:52:11,016:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-09-12 16:52:11,057:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-09-12 16:52:11,058:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 16:52:11,060:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 16:52:11,061:INFO:Engine successfully changes for model 'ridge' to 'sklearn'.
+2023-09-12 16:52:11,069:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-09-12 16:52:11,157:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-09-12 16:52:11,198:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-09-12 16:52:11,198:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 16:52:11,200:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 16:52:11,209:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-09-12 16:52:11,295:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-09-12 16:52:11,336:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-09-12 16:52:11,337:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 16:52:11,339:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 16:52:11,340:INFO:Engine successfully changes for model 'en' to 'sklearn'.
+2023-09-12 16:52:11,439:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-09-12 16:52:11,479:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-09-12 16:52:11,480:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 16:52:11,482:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 16:52:11,576:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-09-12 16:52:11,615:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-09-12 16:52:11,616:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 16:52:11,618:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 16:52:11,618:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2023-09-12 16:52:11,712:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-09-12 16:52:11,754:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 16:52:11,756:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 16:52:11,849:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-09-12 16:52:11,895:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 16:52:11,898:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 16:52:11,899:INFO:Engine successfully changes for model 'svm' to 'sklearn'.
+2023-09-12 16:52:12,037:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 16:52:12,040:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 16:52:12,179:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 16:52:12,182:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 16:52:12,187:INFO:Preparing preprocessing pipeline...
+2023-09-12 16:52:12,188:INFO:Set up simple imputation.
+2023-09-12 16:52:12,211:INFO:Set up encoding of categorical features.
+2023-09-12 16:52:14,780:INFO:Finished creating preprocessing pipeline.
+2023-09-12 16:52:14,785:INFO:Pipeline: Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temp', 'd_point', 'feels',
+                                             'min_temp', 'max_temp', 'prssr',
+                                             'hum', 'wind_spd', 'wind_deg',
+                                             'clouds', 'day_of_the_week',
+                                             'month', 'season', 'yearly_mean',
+                                             'monthly_mean', 'weekly_mean',
+                                             'lag_rain_1h_6_years_value'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['lag_rain_1h_6_years_date'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['lag_rain_1h_6_years_date'],
+                                    transformer=TargetEncoder(cols=['lag_rain_1h_6_years_date'],
+                                                              handle_missing='return_nan')))])
+2023-09-12 16:52:14,785:INFO:Creating final display dataframe.
+2023-09-12 16:52:19,887:INFO:Setup _display_container:                     Description             Value
+0                    Session id                41
+1                        Target           rain_1h
+2                   Target type        Regression
+3           Original data shape      (289272, 19)
+4        Transformed data shape      (289272, 19)
+5   Transformed train set shape      (202490, 19)
+6    Transformed test set shape       (86782, 19)
+7              Numeric features                17
+8          Categorical features                 1
+9                    Preprocess              True
+10              Imputation type            simple
+11           Numeric imputation              mean
+12       Categorical imputation              mode
+13     Maximum one-hot encoding                25
+14              Encoding method              None
+15               Fold Generator             KFold
+16                  Fold Number                10
+17                     CPU Jobs                -1
+18                      Use GPU             False
+19               Log Experiment             False
+20              Experiment Name  reg-default-name
+21                          USI              7f39
+2023-09-12 16:52:20,043:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 16:52:20,046:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 16:52:20,177:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 16:52:20,180:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 16:52:20,180:INFO:setup() successfully completed in 10.42s...............
+2023-09-12 16:52:20,197:INFO:Initializing create_model()
+2023-09-12 16:52:20,197:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7f78e231bc10>, estimator=catboost, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-09-12 16:52:20,197:INFO:Checking exceptions
+2023-09-12 16:52:20,219:INFO:Importing libraries
+2023-09-12 16:52:20,220:INFO:Copying training dataset
+2023-09-12 16:52:20,282:INFO:Defining folds
+2023-09-12 16:52:20,282:INFO:Declaring metric variables
+2023-09-12 16:52:20,286:INFO:Importing untrained model
+2023-09-12 16:52:20,291:INFO:CatBoost Regressor Imported successfully
+2023-09-12 16:52:20,300:INFO:Starting cross validation
+2023-09-12 16:52:20,306:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-09-12 16:52:25,059:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:238: UserWarning: Persisting input arguments took 0.66s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2023-09-12 16:52:25,200:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:238: UserWarning: Persisting input arguments took 0.65s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2023-09-12 16:52:25,478:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:238: UserWarning: Persisting input arguments took 0.71s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2023-09-12 16:52:25,633:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:238: UserWarning: Persisting input arguments took 0.67s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2023-09-12 16:52:25,995:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:238: UserWarning: Persisting input arguments took 0.70s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2023-09-12 16:52:26,191:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:238: UserWarning: Persisting input arguments took 0.63s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2023-09-12 16:52:26,303:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:238: UserWarning: Persisting input arguments took 0.61s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2023-09-12 16:52:26,547:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:238: UserWarning: Persisting input arguments took 0.66s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2023-09-12 16:52:26,913:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:238: UserWarning: Persisting input arguments took 0.64s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2023-09-12 16:52:27,014:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:238: UserWarning: Persisting input arguments took 0.61s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2023-09-12 16:52:31,093:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:231: UserWarning: Persisting input arguments took 1.17s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_transformer = self._memory_fit(
+
+2023-09-12 16:52:31,138:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:231: UserWarning: Persisting input arguments took 1.20s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_transformer = self._memory_fit(
+
+2023-09-12 16:52:31,304:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:231: UserWarning: Persisting input arguments took 1.18s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_transformer = self._memory_fit(
+
+2023-09-12 16:52:31,493:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:231: UserWarning: Persisting input arguments took 1.21s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_transformer = self._memory_fit(
+
+2023-09-12 16:52:31,787:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:231: UserWarning: Persisting input arguments took 1.19s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_transformer = self._memory_fit(
+
+2023-09-12 16:52:32,001:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:231: UserWarning: Persisting input arguments took 1.20s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_transformer = self._memory_fit(
+
+2023-09-12 16:52:32,084:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:231: UserWarning: Persisting input arguments took 1.20s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_transformer = self._memory_fit(
+
+2023-09-12 16:52:32,209:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:231: UserWarning: Persisting input arguments took 1.10s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_transformer = self._memory_fit(
+
+2023-09-12 16:52:32,476:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:231: UserWarning: Persisting input arguments took 1.09s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_transformer = self._memory_fit(
+
+2023-09-12 16:52:32,703:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:231: UserWarning: Persisting input arguments took 1.09s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_transformer = self._memory_fit(
+
+2023-09-12 16:52:33,728:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:238: UserWarning: Persisting input arguments took 1.14s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2023-09-12 16:52:33,832:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:238: UserWarning: Persisting input arguments took 1.16s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2023-09-12 16:52:34,015:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:238: UserWarning: Persisting input arguments took 1.21s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2023-09-12 16:52:34,125:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:238: UserWarning: Persisting input arguments took 1.17s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2023-09-12 16:52:34,613:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:238: UserWarning: Persisting input arguments took 1.33s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2023-09-12 16:52:35,298:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:238: UserWarning: Persisting input arguments took 1.79s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2023-09-12 16:52:35,368:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:238: UserWarning: Persisting input arguments took 1.75s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2023-09-12 16:52:36,123:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:238: UserWarning: Persisting input arguments took 2.35s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2023-09-12 16:52:36,492:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:238: UserWarning: Persisting input arguments took 2.42s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2023-09-12 16:52:37,667:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:238: UserWarning: Persisting input arguments took 3.34s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2023-09-12 16:55:54,271:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:310: UserWarning: Persisting input arguments took 1.04s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-09-12 16:55:54,299:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:310: UserWarning: Persisting input arguments took 1.05s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-09-12 16:55:54,299:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:310: UserWarning: Persisting input arguments took 1.02s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-09-12 16:55:54,960:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:310: UserWarning: Persisting input arguments took 0.93s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-09-12 16:55:55,112:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:310: UserWarning: Persisting input arguments took 0.87s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-09-12 16:55:55,430:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:310: UserWarning: Persisting input arguments took 0.75s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-09-12 16:55:55,507:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:310: UserWarning: Persisting input arguments took 0.78s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-09-12 16:55:55,643:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:310: UserWarning: Persisting input arguments took 0.76s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-09-12 16:55:55,804:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:310: UserWarning: Persisting input arguments took 0.67s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-09-12 16:55:55,866:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:310: UserWarning: Persisting input arguments took 0.63s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-09-12 16:55:55,988:INFO:Calculating mean and std
+2023-09-12 16:55:55,990:INFO:Creating metrics dataframe
+2023-09-12 16:55:55,997:INFO:Finalizing model
+2023-09-12 16:55:58,200:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:231: UserWarning: Persisting input arguments took 0.51s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_transformer = self._memory_fit(
+
+2023-09-12 16:56:12,053:INFO:Uploading results into container
+2023-09-12 16:56:12,054:INFO:Uploading model into container now
+2023-09-12 16:56:12,063:INFO:_master_model_container: 1
+2023-09-12 16:56:12,064:INFO:_display_container: 2
+2023-09-12 16:56:12,064:INFO:<catboost.core.CatBoostRegressor object at 0x7f78b235e380>
+2023-09-12 16:56:12,064:INFO:create_model() successfully completed......................................
+2023-09-12 16:56:12,160:INFO:Initializing predict_model()
+2023-09-12 16:56:12,161:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7f78e231bc10>, estimator=<catboost.core.CatBoostRegressor object at 0x7f78b235e380>, probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7f78b1eac1f0>)
+2023-09-12 16:56:12,161:INFO:Checking exceptions
+2023-09-12 16:56:12,161:INFO:Preloading libraries
+2023-09-12 16:56:12,164:INFO:Set up data.
+2023-09-12 16:56:12,203:INFO:Set up index.
+2023-09-12 17:00:37,544:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-12 17:00:37,544:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-12 17:00:37,544:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-12 17:00:37,544:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-12 17:00:37,660:INFO:PyCaret RegressionExperiment
+2023-09-12 17:00:37,660:INFO:Logging name: reg-default-name
+2023-09-12 17:00:37,660:INFO:ML Usecase: MLUsecase.REGRESSION
+2023-09-12 17:00:37,660:INFO:version 3.0.4
+2023-09-12 17:00:37,660:INFO:Initializing setup()
+2023-09-12 17:00:37,660:INFO:self.USI: a8d8
+2023-09-12 17:00:37,660:INFO:self._variable_keys: {'data', 'exp_name_log', 'y_test', 'seed', '_available_plots', 'html_param', 'fold_generator', 'y', 'gpu_param', 'log_plots_param', 'target_param', 'fold_groups_param', 'fold_shuffle_param', '_ml_usecase', 'y_train', 'X', 'USI', 'logging_param', 'gpu_n_jobs_param', 'X_train', 'exp_id', 'memory', 'X_test', 'n_jobs_param', 'transform_target_param', 'idx', 'pipeline'}
+2023-09-12 17:00:37,660:INFO:Checking environment
+2023-09-12 17:00:37,660:INFO:python_version: 3.10.12
+2023-09-12 17:00:37,660:INFO:python_build: ('main', 'Jun 11 2023 05:26:28')
+2023-09-12 17:00:37,660:INFO:machine: x86_64
+2023-09-12 17:00:37,660:INFO:platform: Linux-5.15.90.1-microsoft-standard-WSL2-x86_64-with-glibc2.35
+2023-09-12 17:00:37,660:INFO:Memory: svmem(total=7997599744, available=6321860608, percent=21.0, used=1409019904, free=4681302016, active=685830144, inactive=2195771392, buffers=53444608, cached=1853833216, shared=2928640, slab=156598272)
+2023-09-12 17:00:37,661:INFO:Physical Core: 6
+2023-09-12 17:00:37,661:INFO:Logical Core: 12
+2023-09-12 17:00:37,661:INFO:Checking libraries
+2023-09-12 17:00:37,661:INFO:System:
+2023-09-12 17:00:37,661:INFO:    python: 3.10.12 (main, Jun 11 2023, 05:26:28) [GCC 11.4.0]
+2023-09-12 17:00:37,661:INFO:executable: /usr/bin/python3
+2023-09-12 17:00:37,661:INFO:   machine: Linux-5.15.90.1-microsoft-standard-WSL2-x86_64-with-glibc2.35
+2023-09-12 17:00:37,661:INFO:PyCaret required dependencies:
+2023-09-12 17:00:37,664:INFO:                 pip: 22.0.2
+2023-09-12 17:00:37,664:INFO:          setuptools: 59.6.0
+2023-09-12 17:00:37,664:INFO:             pycaret: 3.0.4
+2023-09-12 17:00:37,664:INFO:             IPython: 8.14.0
+2023-09-12 17:00:37,664:INFO:          ipywidgets: 8.1.0
+2023-09-12 17:00:37,664:INFO:                tqdm: 4.65.0
+2023-09-12 17:00:37,664:INFO:               numpy: 1.24.4
+2023-09-12 17:00:37,664:INFO:              pandas: 1.5.3
+2023-09-12 17:00:37,664:INFO:              jinja2: 3.1.2
+2023-09-12 17:00:37,664:INFO:               scipy: 1.11.1
+2023-09-12 17:00:37,664:INFO:              joblib: 1.3.1
+2023-09-12 17:00:37,664:INFO:             sklearn: 1.2.2
+2023-09-12 17:00:37,664:INFO:                pyod: 1.1.0
+2023-09-12 17:00:37,664:INFO:            imblearn: 0.11.0
+2023-09-12 17:00:37,664:INFO:   category_encoders: 2.6.2
+2023-09-12 17:00:37,664:INFO:            lightgbm: 3.3.5
+2023-09-12 17:00:37,664:INFO:               numba: 0.57.1
+2023-09-12 17:00:37,664:INFO:            requests: 2.28.2
+2023-09-12 17:00:37,664:INFO:          matplotlib: 3.7.2
+2023-09-12 17:00:37,664:INFO:          scikitplot: 0.3.7
+2023-09-12 17:00:37,664:INFO:         yellowbrick: 1.5
+2023-09-12 17:00:37,664:INFO:              plotly: 5.15.0
+2023-09-12 17:00:37,664:INFO:    plotly-resampler: Not installed
+2023-09-12 17:00:37,664:INFO:             kaleido: 0.2.1
+2023-09-12 17:00:37,664:INFO:           schemdraw: 0.15
+2023-09-12 17:00:37,664:INFO:         statsmodels: 0.14.0
+2023-09-12 17:00:37,664:INFO:              sktime: 0.22.0
+2023-09-12 17:00:37,664:INFO:               tbats: 1.1.3
+2023-09-12 17:00:37,664:INFO:            pmdarima: 2.0.3
+2023-09-12 17:00:37,664:INFO:              psutil: 5.9.5
+2023-09-12 17:00:37,664:INFO:          markupsafe: 2.1.3
+2023-09-12 17:00:37,664:INFO:             pickle5: Not installed
+2023-09-12 17:00:37,664:INFO:         cloudpickle: 2.2.1
+2023-09-12 17:00:37,664:INFO:         deprecation: 2.1.0
+2023-09-12 17:00:37,664:INFO:              xxhash: 3.3.0
+2023-09-12 17:00:37,664:INFO:           wurlitzer: 3.0.3
+2023-09-12 17:00:37,664:INFO:PyCaret optional dependencies:
+2023-09-12 17:00:37,688:INFO:                shap: Not installed
+2023-09-12 17:00:37,689:INFO:           interpret: Not installed
+2023-09-12 17:00:37,689:INFO:                umap: Not installed
+2023-09-12 17:00:37,689:INFO:    pandas_profiling: Not installed
+2023-09-12 17:00:37,689:INFO:  explainerdashboard: Not installed
+2023-09-12 17:00:37,689:INFO:             autoviz: Not installed
+2023-09-12 17:00:37,689:INFO:           fairlearn: Not installed
+2023-09-12 17:00:37,689:INFO:          deepchecks: Not installed
+2023-09-12 17:00:37,689:INFO:             xgboost: 1.7.6
+2023-09-12 17:00:37,689:INFO:            catboost: 1.2
+2023-09-12 17:00:37,689:INFO:              kmodes: Not installed
+2023-09-12 17:00:37,689:INFO:             mlxtend: Not installed
+2023-09-12 17:00:37,689:INFO:       statsforecast: 1.4.0
+2023-09-12 17:00:37,689:INFO:        tune_sklearn: Not installed
+2023-09-12 17:00:37,689:INFO:                 ray: 2.3.1
+2023-09-12 17:00:37,689:INFO:            hyperopt: 0.2.7
+2023-09-12 17:00:37,689:INFO:              optuna: Not installed
+2023-09-12 17:00:37,689:INFO:               skopt: Not installed
+2023-09-12 17:00:37,689:INFO:              mlflow: Not installed
+2023-09-12 17:00:37,689:INFO:              gradio: Not installed
+2023-09-12 17:00:37,689:INFO:             fastapi: Not installed
+2023-09-12 17:00:37,689:INFO:             uvicorn: Not installed
+2023-09-12 17:00:37,689:INFO:              m2cgen: Not installed
+2023-09-12 17:00:37,689:INFO:           evidently: Not installed
+2023-09-12 17:00:37,689:INFO:               fugue: Not installed
+2023-09-12 17:00:37,689:INFO:           streamlit: Not installed
+2023-09-12 17:00:37,689:INFO:             prophet: Not installed
+2023-09-12 17:00:37,689:INFO:None
+2023-09-12 17:00:37,689:INFO:Set up data.
+2023-09-12 17:00:37,790:INFO:Set up train/test split.
+2023-09-12 17:00:37,835:INFO:Set up index.
+2023-09-12 17:00:37,840:INFO:Set up folding strategy.
+2023-09-12 17:00:37,840:INFO:Assigning column types.
+2023-09-12 17:00:37,869:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2023-09-12 17:00:37,869:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2023-09-12 17:00:37,874:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-09-12 17:00:37,878:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-09-12 17:00:37,988:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-09-12 17:00:38,028:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-09-12 17:00:38,028:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 17:00:38,153:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 17:00:38,172:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2023-09-12 17:00:38,177:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-09-12 17:00:38,181:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-09-12 17:00:38,274:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-09-12 17:00:38,317:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-09-12 17:00:38,318:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 17:00:38,320:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 17:00:38,320:INFO:Engine successfully changes for model 'lasso' to 'sklearn'.
+2023-09-12 17:00:38,324:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-09-12 17:00:38,328:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-09-12 17:00:38,421:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-09-12 17:00:38,460:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-09-12 17:00:38,461:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 17:00:38,464:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 17:00:38,471:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-09-12 17:00:38,477:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-09-12 17:00:38,567:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-09-12 17:00:38,608:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-09-12 17:00:38,609:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 17:00:38,611:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 17:00:38,611:INFO:Engine successfully changes for model 'ridge' to 'sklearn'.
+2023-09-12 17:00:38,621:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-09-12 17:00:38,705:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-09-12 17:00:38,745:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-09-12 17:00:38,746:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 17:00:38,749:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 17:00:38,762:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-09-12 17:00:38,857:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-09-12 17:00:38,896:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-09-12 17:00:38,897:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 17:00:38,899:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 17:00:38,899:INFO:Engine successfully changes for model 'en' to 'sklearn'.
+2023-09-12 17:00:38,997:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-09-12 17:00:39,039:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-09-12 17:00:39,040:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 17:00:39,043:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 17:00:39,153:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-09-12 17:00:39,193:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-09-12 17:00:39,194:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 17:00:39,196:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 17:00:39,196:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2023-09-12 17:00:39,288:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-09-12 17:00:39,331:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 17:00:39,334:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 17:00:39,432:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-09-12 17:00:39,473:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 17:00:39,475:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 17:00:39,476:INFO:Engine successfully changes for model 'svm' to 'sklearn'.
+2023-09-12 17:00:39,628:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 17:00:39,630:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 17:00:39,806:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 17:00:39,810:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 17:00:39,813:INFO:Preparing preprocessing pipeline...
+2023-09-12 17:00:39,813:INFO:Set up simple imputation.
+2023-09-12 17:00:39,967:INFO:Finished creating preprocessing pipeline.
+2023-09-12 17:00:39,970:INFO:Pipeline: Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temp', 'd_point', 'feels',
+                                             'min_temp', 'max_temp', 'prssr',
+                                             'hum', 'wind_spd', 'wind_deg',
+                                             'clouds', 'day_of_the_week',
+                                             'month', 'season', 'yearly_mean',
+                                             'monthly_mean', 'weekly_mean',
+                                             'lag_rain_1h_6_years_value'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent')))])
+2023-09-12 17:00:39,971:INFO:Creating final display dataframe.
+2023-09-12 17:00:40,208:INFO:Setup _display_container:                     Description             Value
+0                    Session id                41
+1                        Target           rain_1h
+2                   Target type        Regression
+3           Original data shape      (289272, 18)
+4        Transformed data shape      (289272, 18)
+5   Transformed train set shape      (202490, 18)
+6    Transformed test set shape       (86782, 18)
+7              Numeric features                17
+8                    Preprocess              True
+9               Imputation type            simple
+10           Numeric imputation              mean
+11       Categorical imputation              mode
+12               Fold Generator             KFold
+13                  Fold Number                10
+14                     CPU Jobs                -1
+15                      Use GPU             False
+16               Log Experiment             False
+17              Experiment Name  reg-default-name
+18                          USI              a8d8
+2023-09-12 17:00:40,357:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 17:00:40,360:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 17:00:40,501:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 17:00:40,503:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 17:00:40,504:INFO:setup() successfully completed in 2.85s...............
+2023-09-12 17:00:40,521:INFO:Initializing create_model()
+2023-09-12 17:00:40,522:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7f554c7406d0>, estimator=catboost, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-09-12 17:00:40,522:INFO:Checking exceptions
+2023-09-12 17:00:40,543:INFO:Importing libraries
+2023-09-12 17:00:40,543:INFO:Copying training dataset
+2023-09-12 17:00:40,601:INFO:Defining folds
+2023-09-12 17:00:40,602:INFO:Declaring metric variables
+2023-09-12 17:00:40,605:INFO:Importing untrained model
+2023-09-12 17:00:40,609:INFO:CatBoost Regressor Imported successfully
+2023-09-12 17:00:40,618:INFO:Starting cross validation
+2023-09-12 17:00:40,623:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-09-12 17:03:49,172:INFO:Calculating mean and std
+2023-09-12 17:03:49,176:INFO:Creating metrics dataframe
+2023-09-12 17:03:49,186:INFO:Finalizing model
+2023-09-12 17:03:59,973:INFO:Uploading results into container
+2023-09-12 17:03:59,975:INFO:Uploading model into container now
+2023-09-12 17:03:59,988:INFO:_master_model_container: 1
+2023-09-12 17:03:59,988:INFO:_display_container: 2
+2023-09-12 17:03:59,988:INFO:<catboost.core.CatBoostRegressor object at 0x7f54cdb20610>
+2023-09-12 17:03:59,988:INFO:create_model() successfully completed......................................
+2023-09-12 17:04:00,105:INFO:Initializing predict_model()
+2023-09-12 17:04:00,105:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7f554c7406d0>, estimator=<catboost.core.CatBoostRegressor object at 0x7f54cdb20610>, probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7f54cdb336d0>)
+2023-09-12 17:04:00,106:INFO:Checking exceptions
+2023-09-12 17:04:00,106:INFO:Preloading libraries
+2023-09-12 17:04:00,110:INFO:Set up data.
+2023-09-12 17:04:00,124:INFO:Set up index.
+2023-09-12 17:06:18,599:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-12 17:06:18,599:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-12 17:06:18,599:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-12 17:06:18,599:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-12 17:06:18,685:INFO:PyCaret RegressionExperiment
+2023-09-12 17:06:18,685:INFO:Logging name: reg-default-name
+2023-09-12 17:06:18,686:INFO:ML Usecase: MLUsecase.REGRESSION
+2023-09-12 17:06:18,686:INFO:version 3.0.4
+2023-09-12 17:06:18,686:INFO:Initializing setup()
+2023-09-12 17:06:18,686:INFO:self.USI: 355d
+2023-09-12 17:06:18,686:INFO:self._variable_keys: {'gpu_param', 'data', '_available_plots', 'y_train', 'exp_name_log', 'logging_param', 'X', 'USI', 'X_train', 'exp_id', 'seed', 'transform_target_param', 'log_plots_param', 'fold_groups_param', 'gpu_n_jobs_param', 'pipeline', 'idx', 'memory', 'n_jobs_param', 'y_test', 'fold_generator', '_ml_usecase', 'X_test', 'fold_shuffle_param', 'y', 'target_param', 'html_param'}
+2023-09-12 17:06:18,686:INFO:Checking environment
+2023-09-12 17:06:18,686:INFO:python_version: 3.10.12
+2023-09-12 17:06:18,686:INFO:python_build: ('main', 'Jun 11 2023 05:26:28')
+2023-09-12 17:06:18,686:INFO:machine: x86_64
+2023-09-12 17:06:18,686:INFO:platform: Linux-5.15.90.1-microsoft-standard-WSL2-x86_64-with-glibc2.35
+2023-09-12 17:06:18,686:INFO:Memory: svmem(total=7997599744, available=2527715328, percent=68.4, used=5261381632, free=755740672, active=690606080, inactive=6076977152, buffers=54480896, cached=1925996544, shared=2998272, slab=166498304)
+2023-09-12 17:06:18,686:INFO:Physical Core: 6
+2023-09-12 17:06:18,686:INFO:Logical Core: 12
+2023-09-12 17:06:18,686:INFO:Checking libraries
+2023-09-12 17:06:18,686:INFO:System:
+2023-09-12 17:06:18,686:INFO:    python: 3.10.12 (main, Jun 11 2023, 05:26:28) [GCC 11.4.0]
+2023-09-12 17:06:18,687:INFO:executable: /usr/bin/python3
+2023-09-12 17:06:18,687:INFO:   machine: Linux-5.15.90.1-microsoft-standard-WSL2-x86_64-with-glibc2.35
+2023-09-12 17:06:18,687:INFO:PyCaret required dependencies:
+2023-09-12 17:06:18,690:INFO:                 pip: 22.0.2
+2023-09-12 17:06:18,690:INFO:          setuptools: 59.6.0
+2023-09-12 17:06:18,690:INFO:             pycaret: 3.0.4
+2023-09-12 17:06:18,690:INFO:             IPython: 8.14.0
+2023-09-12 17:06:18,690:INFO:          ipywidgets: 8.1.0
+2023-09-12 17:06:18,690:INFO:                tqdm: 4.65.0
+2023-09-12 17:06:18,690:INFO:               numpy: 1.24.4
+2023-09-12 17:06:18,690:INFO:              pandas: 1.5.3
+2023-09-12 17:06:18,690:INFO:              jinja2: 3.1.2
+2023-09-12 17:06:18,690:INFO:               scipy: 1.11.1
+2023-09-12 17:06:18,690:INFO:              joblib: 1.3.1
+2023-09-12 17:06:18,690:INFO:             sklearn: 1.2.2
+2023-09-12 17:06:18,690:INFO:                pyod: 1.1.0
+2023-09-12 17:06:18,690:INFO:            imblearn: 0.11.0
+2023-09-12 17:06:18,691:INFO:   category_encoders: 2.6.2
+2023-09-12 17:06:18,691:INFO:            lightgbm: 3.3.5
+2023-09-12 17:06:18,691:INFO:               numba: 0.57.1
+2023-09-12 17:06:18,691:INFO:            requests: 2.28.2
+2023-09-12 17:06:18,691:INFO:          matplotlib: 3.7.2
+2023-09-12 17:06:18,691:INFO:          scikitplot: 0.3.7
+2023-09-12 17:06:18,691:INFO:         yellowbrick: 1.5
+2023-09-12 17:06:18,691:INFO:              plotly: 5.15.0
+2023-09-12 17:06:18,691:INFO:    plotly-resampler: Not installed
+2023-09-12 17:06:18,691:INFO:             kaleido: 0.2.1
+2023-09-12 17:06:18,691:INFO:           schemdraw: 0.15
+2023-09-12 17:06:18,691:INFO:         statsmodels: 0.14.0
+2023-09-12 17:06:18,691:INFO:              sktime: 0.22.0
+2023-09-12 17:06:18,691:INFO:               tbats: 1.1.3
+2023-09-12 17:06:18,691:INFO:            pmdarima: 2.0.3
+2023-09-12 17:06:18,691:INFO:              psutil: 5.9.5
+2023-09-12 17:06:18,691:INFO:          markupsafe: 2.1.3
+2023-09-12 17:06:18,691:INFO:             pickle5: Not installed
+2023-09-12 17:06:18,691:INFO:         cloudpickle: 2.2.1
+2023-09-12 17:06:18,691:INFO:         deprecation: 2.1.0
+2023-09-12 17:06:18,691:INFO:              xxhash: 3.3.0
+2023-09-12 17:06:18,691:INFO:           wurlitzer: 3.0.3
+2023-09-12 17:06:18,691:INFO:PyCaret optional dependencies:
+2023-09-12 17:06:18,717:INFO:                shap: Not installed
+2023-09-12 17:06:18,717:INFO:           interpret: Not installed
+2023-09-12 17:06:18,717:INFO:                umap: Not installed
+2023-09-12 17:06:18,717:INFO:    pandas_profiling: Not installed
+2023-09-12 17:06:18,717:INFO:  explainerdashboard: Not installed
+2023-09-12 17:06:18,717:INFO:             autoviz: Not installed
+2023-09-12 17:06:18,717:INFO:           fairlearn: Not installed
+2023-09-12 17:06:18,717:INFO:          deepchecks: Not installed
+2023-09-12 17:06:18,717:INFO:             xgboost: 1.7.6
+2023-09-12 17:06:18,717:INFO:            catboost: 1.2
+2023-09-12 17:06:18,717:INFO:              kmodes: Not installed
+2023-09-12 17:06:18,717:INFO:             mlxtend: Not installed
+2023-09-12 17:06:18,717:INFO:       statsforecast: 1.4.0
+2023-09-12 17:06:18,718:INFO:        tune_sklearn: Not installed
+2023-09-12 17:06:18,718:INFO:                 ray: 2.3.1
+2023-09-12 17:06:18,718:INFO:            hyperopt: 0.2.7
+2023-09-12 17:06:18,718:INFO:              optuna: Not installed
+2023-09-12 17:06:18,718:INFO:               skopt: Not installed
+2023-09-12 17:06:18,718:INFO:              mlflow: Not installed
+2023-09-12 17:06:18,718:INFO:              gradio: Not installed
+2023-09-12 17:06:18,718:INFO:             fastapi: Not installed
+2023-09-12 17:06:18,718:INFO:             uvicorn: Not installed
+2023-09-12 17:06:18,718:INFO:              m2cgen: Not installed
+2023-09-12 17:06:18,718:INFO:           evidently: Not installed
+2023-09-12 17:06:18,718:INFO:               fugue: Not installed
+2023-09-12 17:06:18,718:INFO:           streamlit: Not installed
+2023-09-12 17:06:18,718:INFO:             prophet: Not installed
+2023-09-12 17:06:18,718:INFO:None
+2023-09-12 17:06:18,718:INFO:Set up data.
+2023-09-12 17:06:19,042:INFO:Set up train/test split.
+2023-09-12 17:06:19,161:INFO:Set up index.
+2023-09-12 17:06:19,168:INFO:Set up folding strategy.
+2023-09-12 17:06:19,168:INFO:Assigning column types.
+2023-09-12 17:06:19,202:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2023-09-12 17:06:19,202:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2023-09-12 17:06:19,206:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-09-12 17:06:19,211:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-09-12 17:06:19,303:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-09-12 17:06:19,349:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-09-12 17:06:19,351:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 17:06:19,379:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 17:06:19,392:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2023-09-12 17:06:19,396:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-09-12 17:06:19,401:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-09-12 17:06:19,487:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-09-12 17:06:19,529:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-09-12 17:06:19,530:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 17:06:19,532:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 17:06:19,532:INFO:Engine successfully changes for model 'lasso' to 'sklearn'.
+2023-09-12 17:06:19,537:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-09-12 17:06:19,541:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-09-12 17:06:19,628:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-09-12 17:06:19,666:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-09-12 17:06:19,667:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 17:06:19,669:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 17:06:19,674:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-09-12 17:06:19,678:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-09-12 17:06:19,768:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-09-12 17:06:19,807:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-09-12 17:06:19,808:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 17:06:19,811:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 17:06:19,811:INFO:Engine successfully changes for model 'ridge' to 'sklearn'.
+2023-09-12 17:06:19,819:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-09-12 17:06:19,912:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-09-12 17:06:19,950:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-09-12 17:06:19,951:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 17:06:19,953:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 17:06:19,961:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-09-12 17:06:20,048:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-09-12 17:06:20,087:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-09-12 17:06:20,087:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 17:06:20,089:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 17:06:20,090:INFO:Engine successfully changes for model 'en' to 'sklearn'.
+2023-09-12 17:06:20,185:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-09-12 17:06:20,224:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-09-12 17:06:20,224:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 17:06:20,227:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 17:06:20,319:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-09-12 17:06:20,357:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-09-12 17:06:20,358:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 17:06:20,360:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 17:06:20,361:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2023-09-12 17:06:20,456:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-09-12 17:06:20,500:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 17:06:20,505:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 17:06:20,603:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-09-12 17:06:20,642:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 17:06:20,644:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 17:06:20,644:INFO:Engine successfully changes for model 'svm' to 'sklearn'.
+2023-09-12 17:06:20,772:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 17:06:20,775:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 17:06:20,908:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 17:06:20,910:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 17:06:20,912:INFO:Preparing preprocessing pipeline...
+2023-09-12 17:06:20,912:INFO:Set up simple imputation.
+2023-09-12 17:06:20,937:INFO:Set up encoding of categorical features.
+2023-09-12 17:06:23,568:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:260: UserWarning: Persisting input arguments took 0.50s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_estimator = self._memory_fit(
+
+2023-09-12 17:06:23,570:INFO:Finished creating preprocessing pipeline.
+2023-09-12 17:06:23,576:INFO:Pipeline: Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temp', 'd_point', 'feels',
+                                             'min_temp', 'max_temp', 'prssr',
+                                             'hum', 'wind_spd', 'wind_deg',
+                                             'clouds', 'month', 'season',
+                                             'yearly_mean', 'monthly_mean',
+                                             'weekly_mean',
+                                             'lag_rain_1h_6_years_value'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['lag_rain_1h_6_years_date'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['lag_rain_1h_6_years_date'],
+                                    transformer=TargetEncoder(cols=['lag_rain_1h_6_years_date'],
+                                                              handle_missing='return_nan')))])
+2023-09-12 17:06:23,576:INFO:Creating final display dataframe.
+2023-09-12 17:06:25,690:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:108: UserWarning: Persisting input arguments took 0.52s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = pipeline._memory_transform(transformer, X, y)
+
+2023-09-12 17:06:28,915:INFO:Setup _display_container:                     Description             Value
+0                    Session id                42
+1                        Target           rain_1h
+2                   Target type        Regression
+3           Original data shape      (289272, 18)
+4        Transformed data shape      (289272, 18)
+5   Transformed train set shape      (202490, 18)
+6    Transformed test set shape       (86782, 18)
+7              Numeric features                16
+8          Categorical features                 1
+9                    Preprocess              True
+10              Imputation type            simple
+11           Numeric imputation              mean
+12       Categorical imputation              mode
+13     Maximum one-hot encoding                25
+14              Encoding method              None
+15               Fold Generator             KFold
+16                  Fold Number                10
+17                     CPU Jobs                -1
+18                      Use GPU             False
+19               Log Experiment             False
+20              Experiment Name  reg-default-name
+21                          USI              355d
+2023-09-12 17:06:29,062:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 17:06:29,064:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 17:06:29,205:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 17:06:29,208:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 17:06:29,208:INFO:setup() successfully completed in 10.53s...............
+2023-09-12 17:06:29,215:INFO:Initializing create_model()
+2023-09-12 17:06:29,215:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7f92e8220c70>, estimator=catboost, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-09-12 17:06:29,215:INFO:Checking exceptions
+2023-09-12 17:06:29,239:INFO:Importing libraries
+2023-09-12 17:06:29,239:INFO:Copying training dataset
+2023-09-12 17:06:29,308:INFO:Defining folds
+2023-09-12 17:06:29,308:INFO:Declaring metric variables
+2023-09-12 17:06:29,312:INFO:Importing untrained model
+2023-09-12 17:06:29,316:INFO:CatBoost Regressor Imported successfully
+2023-09-12 17:06:29,323:INFO:Starting cross validation
+2023-09-12 17:06:29,332:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-09-12 17:06:35,411:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:231: UserWarning: Persisting input arguments took 0.77s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_transformer = self._memory_fit(
+
+2023-09-12 17:06:35,431:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:231: UserWarning: Persisting input arguments took 0.87s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_transformer = self._memory_fit(
+
+2023-09-12 17:06:35,766:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:231: UserWarning: Persisting input arguments took 0.82s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_transformer = self._memory_fit(
+
+2023-09-12 17:06:35,851:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:231: UserWarning: Persisting input arguments took 0.92s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_transformer = self._memory_fit(
+
+2023-09-12 17:06:36,253:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:231: UserWarning: Persisting input arguments took 0.90s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_transformer = self._memory_fit(
+
+2023-09-12 17:06:36,968:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:231: UserWarning: Persisting input arguments took 0.93s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_transformer = self._memory_fit(
+
+2023-09-12 17:06:37,019:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:231: UserWarning: Persisting input arguments took 1.01s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_transformer = self._memory_fit(
+
+2023-09-12 17:06:37,408:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:231: UserWarning: Persisting input arguments took 1.09s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_transformer = self._memory_fit(
+
+2023-09-12 17:06:37,507:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:238: UserWarning: Persisting input arguments took 0.93s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2023-09-12 17:06:37,540:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:238: UserWarning: Persisting input arguments took 0.94s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2023-09-12 17:06:37,582:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:238: UserWarning: Persisting input arguments took 0.57s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2023-09-12 17:06:37,655:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:238: UserWarning: Persisting input arguments took 0.57s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2023-09-12 17:06:37,990:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:238: UserWarning: Persisting input arguments took 0.58s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2023-09-12 17:06:38,796:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:238: UserWarning: Persisting input arguments took 0.55s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2023-09-12 17:06:38,950:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:238: UserWarning: Persisting input arguments took 0.60s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2023-09-12 17:06:39,078:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:231: UserWarning: Persisting input arguments took 0.56s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_transformer = self._memory_fit(
+
+2023-09-12 17:06:39,120:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:231: UserWarning: Persisting input arguments took 0.53s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_transformer = self._memory_fit(
+
+2023-09-12 17:06:39,334:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:238: UserWarning: Persisting input arguments took 0.59s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2023-09-12 17:06:39,494:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:231: UserWarning: Persisting input arguments took 0.60s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_transformer = self._memory_fit(
+
+2023-09-12 17:06:40,164:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:238: UserWarning: Persisting input arguments took 0.52s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2023-09-12 17:06:44,250:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:231: UserWarning: Persisting input arguments took 1.26s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_transformer = self._memory_fit(
+
+2023-09-12 17:06:44,325:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:231: UserWarning: Persisting input arguments took 1.26s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_transformer = self._memory_fit(
+
+2023-09-12 17:06:44,455:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:231: UserWarning: Persisting input arguments took 1.32s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_transformer = self._memory_fit(
+
+2023-09-12 17:06:44,679:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:231: UserWarning: Persisting input arguments took 1.35s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_transformer = self._memory_fit(
+
+2023-09-12 17:06:44,828:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:231: UserWarning: Persisting input arguments took 1.23s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_transformer = self._memory_fit(
+
+2023-09-12 17:06:44,944:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:231: UserWarning: Persisting input arguments took 1.47s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_transformer = self._memory_fit(
+
+2023-09-12 17:06:44,970:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:231: UserWarning: Persisting input arguments took 1.32s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_transformer = self._memory_fit(
+
+2023-09-12 17:06:45,199:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:231: UserWarning: Persisting input arguments took 1.22s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_transformer = self._memory_fit(
+
+2023-09-12 17:06:45,609:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:231: UserWarning: Persisting input arguments took 1.29s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_transformer = self._memory_fit(
+
+2023-09-12 17:06:46,177:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:231: UserWarning: Persisting input arguments took 1.48s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_transformer = self._memory_fit(
+
+2023-09-12 17:06:47,148:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:238: UserWarning: Persisting input arguments took 1.23s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2023-09-12 17:06:47,246:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:238: UserWarning: Persisting input arguments took 1.25s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2023-09-12 17:06:47,393:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:238: UserWarning: Persisting input arguments took 1.21s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2023-09-12 17:06:47,677:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:238: UserWarning: Persisting input arguments took 1.16s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2023-09-12 17:06:47,682:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:238: UserWarning: Persisting input arguments took 1.10s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2023-09-12 17:06:47,989:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:238: UserWarning: Persisting input arguments took 1.13s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2023-09-12 17:06:48,105:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:238: UserWarning: Persisting input arguments took 1.22s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2023-09-12 17:06:48,204:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:238: UserWarning: Persisting input arguments took 1.26s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2023-09-12 17:06:48,460:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:238: UserWarning: Persisting input arguments took 1.07s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2023-09-12 17:06:48,697:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:238: UserWarning: Persisting input arguments took 0.76s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2023-09-12 17:10:25,285:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:108: UserWarning: Persisting input arguments took 1.22s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = pipeline._memory_transform(transformer, X, y)
+
+2023-09-12 17:10:25,492:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:108: UserWarning: Persisting input arguments took 1.17s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = pipeline._memory_transform(transformer, X, y)
+
+2023-09-12 17:10:25,541:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:108: UserWarning: Persisting input arguments took 1.17s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = pipeline._memory_transform(transformer, X, y)
+
+2023-09-12 17:10:26,208:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:108: UserWarning: Persisting input arguments took 1.04s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = pipeline._memory_transform(transformer, X, y)
+
+2023-09-12 17:10:26,720:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:310: UserWarning: Persisting input arguments took 1.43s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-09-12 17:10:26,733:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:108: UserWarning: Persisting input arguments took 1.08s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = pipeline._memory_transform(transformer, X, y)
+
+2023-09-12 17:10:26,791:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:108: UserWarning: Persisting input arguments took 1.23s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = pipeline._memory_transform(transformer, X, y)
+
+2023-09-12 17:10:26,793:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:108: UserWarning: Persisting input arguments took 1.06s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = pipeline._memory_transform(transformer, X, y)
+
+2023-09-12 17:10:26,866:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:310: UserWarning: Persisting input arguments took 1.37s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-09-12 17:10:26,892:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:310: UserWarning: Persisting input arguments took 1.34s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-09-12 17:10:27,239:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:108: UserWarning: Persisting input arguments took 1.19s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = pipeline._memory_transform(transformer, X, y)
+
+2023-09-12 17:10:27,455:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:108: UserWarning: Persisting input arguments took 1.16s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = pipeline._memory_transform(transformer, X, y)
+
+2023-09-12 17:10:27,547:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:310: UserWarning: Persisting input arguments took 1.33s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-09-12 17:10:27,887:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:108: UserWarning: Persisting input arguments took 0.83s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = pipeline._memory_transform(transformer, X, y)
+
+2023-09-12 17:10:27,925:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:310: UserWarning: Persisting input arguments took 1.18s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-09-12 17:10:27,987:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:310: UserWarning: Persisting input arguments took 1.18s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-09-12 17:10:28,002:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:310: UserWarning: Persisting input arguments took 1.20s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-09-12 17:10:28,174:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:310: UserWarning: Persisting input arguments took 0.93s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-09-12 17:10:28,317:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:310: UserWarning: Persisting input arguments took 0.86s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-09-12 17:10:28,548:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:310: UserWarning: Persisting input arguments took 0.66s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-09-12 17:10:28,672:INFO:Calculating mean and std
+2023-09-12 17:10:28,678:INFO:Creating metrics dataframe
+2023-09-12 17:10:28,691:INFO:Finalizing model
+2023-09-12 17:10:31,065:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:231: UserWarning: Persisting input arguments took 0.51s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_transformer = self._memory_fit(
+
+2023-09-12 17:10:32,378:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:238: UserWarning: Persisting input arguments took 0.54s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2023-09-12 17:10:45,572:INFO:Uploading results into container
+2023-09-12 17:10:45,573:INFO:Uploading model into container now
+2023-09-12 17:10:45,589:INFO:_master_model_container: 1
+2023-09-12 17:10:45,589:INFO:_display_container: 2
+2023-09-12 17:10:45,589:INFO:<catboost.core.CatBoostRegressor object at 0x7f92d7cfb7f0>
+2023-09-12 17:10:45,589:INFO:create_model() successfully completed......................................
+2023-09-12 17:11:42,409:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-12 17:11:42,409:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-12 17:11:42,410:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-12 17:11:42,410:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-12 17:11:42,537:INFO:PyCaret RegressionExperiment
+2023-09-12 17:11:42,537:INFO:Logging name: reg-default-name
+2023-09-12 17:11:42,537:INFO:ML Usecase: MLUsecase.REGRESSION
+2023-09-12 17:11:42,537:INFO:version 3.0.4
+2023-09-12 17:11:42,537:INFO:Initializing setup()
+2023-09-12 17:11:42,537:INFO:self.USI: e4e7
+2023-09-12 17:11:42,537:INFO:self._variable_keys: {'_available_plots', 'X', 'USI', 'fold_shuffle_param', 'gpu_param', 'html_param', 'fold_generator', 'logging_param', 'exp_id', 'memory', 'pipeline', 'y_test', 'X_test', 'transform_target_param', 'y', 'exp_name_log', 'y_train', 'seed', 'data', 'n_jobs_param', 'log_plots_param', 'X_train', 'gpu_n_jobs_param', 'fold_groups_param', 'idx', '_ml_usecase', 'target_param'}
+2023-09-12 17:11:42,537:INFO:Checking environment
+2023-09-12 17:11:42,537:INFO:python_version: 3.10.12
+2023-09-12 17:11:42,537:INFO:python_build: ('main', 'Jun 11 2023 05:26:28')
+2023-09-12 17:11:42,537:INFO:machine: x86_64
+2023-09-12 17:11:42,537:INFO:platform: Linux-5.15.90.1-microsoft-standard-WSL2-x86_64-with-glibc2.35
+2023-09-12 17:11:42,537:INFO:Memory: svmem(total=7997599744, available=6507962368, percent=18.6, used=1242484736, free=6284980224, active=249524224, inactive=1054126080, buffers=30146560, cached=439988224, shared=2838528, slab=119279616)
+2023-09-12 17:11:42,538:INFO:Physical Core: 6
+2023-09-12 17:11:42,538:INFO:Logical Core: 12
+2023-09-12 17:11:42,538:INFO:Checking libraries
+2023-09-12 17:11:42,538:INFO:System:
+2023-09-12 17:11:42,538:INFO:    python: 3.10.12 (main, Jun 11 2023, 05:26:28) [GCC 11.4.0]
+2023-09-12 17:11:42,538:INFO:executable: /usr/bin/python3
+2023-09-12 17:11:42,538:INFO:   machine: Linux-5.15.90.1-microsoft-standard-WSL2-x86_64-with-glibc2.35
+2023-09-12 17:11:42,538:INFO:PyCaret required dependencies:
+2023-09-12 17:11:42,542:INFO:                 pip: 22.0.2
+2023-09-12 17:11:42,542:INFO:          setuptools: 59.6.0
+2023-09-12 17:11:42,542:INFO:             pycaret: 3.0.4
+2023-09-12 17:11:42,542:INFO:             IPython: 8.14.0
+2023-09-12 17:11:42,542:INFO:          ipywidgets: 8.1.0
+2023-09-12 17:11:42,542:INFO:                tqdm: 4.65.0
+2023-09-12 17:11:42,542:INFO:               numpy: 1.24.4
+2023-09-12 17:11:42,542:INFO:              pandas: 1.5.3
+2023-09-12 17:11:42,542:INFO:              jinja2: 3.1.2
+2023-09-12 17:11:42,542:INFO:               scipy: 1.11.1
+2023-09-12 17:11:42,542:INFO:              joblib: 1.3.1
+2023-09-12 17:11:42,542:INFO:             sklearn: 1.2.2
+2023-09-12 17:11:42,542:INFO:                pyod: 1.1.0
+2023-09-12 17:11:42,542:INFO:            imblearn: 0.11.0
+2023-09-12 17:11:42,543:INFO:   category_encoders: 2.6.2
+2023-09-12 17:11:42,543:INFO:            lightgbm: 3.3.5
+2023-09-12 17:11:42,543:INFO:               numba: 0.57.1
+2023-09-12 17:11:42,543:INFO:            requests: 2.28.2
+2023-09-12 17:11:42,543:INFO:          matplotlib: 3.7.2
+2023-09-12 17:11:42,543:INFO:          scikitplot: 0.3.7
+2023-09-12 17:11:42,543:INFO:         yellowbrick: 1.5
+2023-09-12 17:11:42,543:INFO:              plotly: 5.15.0
+2023-09-12 17:11:42,543:INFO:    plotly-resampler: Not installed
+2023-09-12 17:11:42,543:INFO:             kaleido: 0.2.1
+2023-09-12 17:11:42,543:INFO:           schemdraw: 0.15
+2023-09-12 17:11:42,543:INFO:         statsmodels: 0.14.0
+2023-09-12 17:11:42,543:INFO:              sktime: 0.22.0
+2023-09-12 17:11:42,543:INFO:               tbats: 1.1.3
+2023-09-12 17:11:42,543:INFO:            pmdarima: 2.0.3
+2023-09-12 17:11:42,543:INFO:              psutil: 5.9.5
+2023-09-12 17:11:42,543:INFO:          markupsafe: 2.1.3
+2023-09-12 17:11:42,543:INFO:             pickle5: Not installed
+2023-09-12 17:11:42,543:INFO:         cloudpickle: 2.2.1
+2023-09-12 17:11:42,543:INFO:         deprecation: 2.1.0
+2023-09-12 17:11:42,543:INFO:              xxhash: 3.3.0
+2023-09-12 17:11:42,543:INFO:           wurlitzer: 3.0.3
+2023-09-12 17:11:42,543:INFO:PyCaret optional dependencies:
+2023-09-12 17:11:42,570:INFO:                shap: Not installed
+2023-09-12 17:11:42,570:INFO:           interpret: Not installed
+2023-09-12 17:11:42,570:INFO:                umap: Not installed
+2023-09-12 17:11:42,570:INFO:    pandas_profiling: Not installed
+2023-09-12 17:11:42,570:INFO:  explainerdashboard: Not installed
+2023-09-12 17:11:42,570:INFO:             autoviz: Not installed
+2023-09-12 17:11:42,570:INFO:           fairlearn: Not installed
+2023-09-12 17:11:42,570:INFO:          deepchecks: Not installed
+2023-09-12 17:11:42,570:INFO:             xgboost: 1.7.6
+2023-09-12 17:11:42,570:INFO:            catboost: 1.2
+2023-09-12 17:11:42,570:INFO:              kmodes: Not installed
+2023-09-12 17:11:42,570:INFO:             mlxtend: Not installed
+2023-09-12 17:11:42,570:INFO:       statsforecast: 1.4.0
+2023-09-12 17:11:42,570:INFO:        tune_sklearn: Not installed
+2023-09-12 17:11:42,570:INFO:                 ray: 2.3.1
+2023-09-12 17:11:42,570:INFO:            hyperopt: 0.2.7
+2023-09-12 17:11:42,570:INFO:              optuna: Not installed
+2023-09-12 17:11:42,570:INFO:               skopt: Not installed
+2023-09-12 17:11:42,570:INFO:              mlflow: Not installed
+2023-09-12 17:11:42,570:INFO:              gradio: Not installed
+2023-09-12 17:11:42,570:INFO:             fastapi: Not installed
+2023-09-12 17:11:42,570:INFO:             uvicorn: Not installed
+2023-09-12 17:11:42,570:INFO:              m2cgen: Not installed
+2023-09-12 17:11:42,570:INFO:           evidently: Not installed
+2023-09-12 17:11:42,570:INFO:               fugue: Not installed
+2023-09-12 17:11:42,570:INFO:           streamlit: Not installed
+2023-09-12 17:11:42,570:INFO:             prophet: Not installed
+2023-09-12 17:11:42,571:INFO:None
+2023-09-12 17:11:42,571:INFO:Set up data.
+2023-09-12 17:11:42,646:INFO:Set up train/test split.
+2023-09-12 17:11:42,690:INFO:Set up index.
+2023-09-12 17:11:42,696:INFO:Set up folding strategy.
+2023-09-12 17:11:42,696:INFO:Assigning column types.
+2023-09-12 17:11:42,736:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2023-09-12 17:11:42,736:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2023-09-12 17:11:42,740:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-09-12 17:11:42,744:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-09-12 17:11:42,837:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-09-12 17:11:42,877:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-09-12 17:11:42,878:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 17:11:42,965:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 17:11:43,004:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2023-09-12 17:11:43,008:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-09-12 17:11:43,014:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-09-12 17:11:43,097:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-09-12 17:11:43,135:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-09-12 17:11:43,136:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 17:11:43,138:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 17:11:43,138:INFO:Engine successfully changes for model 'lasso' to 'sklearn'.
+2023-09-12 17:11:43,142:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-09-12 17:11:43,146:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-09-12 17:11:43,242:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-09-12 17:11:43,281:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-09-12 17:11:43,281:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 17:11:43,283:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 17:11:43,288:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-09-12 17:11:43,292:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-09-12 17:11:43,376:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-09-12 17:11:43,414:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-09-12 17:11:43,414:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 17:11:43,416:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 17:11:43,417:INFO:Engine successfully changes for model 'ridge' to 'sklearn'.
+2023-09-12 17:11:43,425:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-09-12 17:11:43,511:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-09-12 17:11:43,552:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-09-12 17:11:43,552:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 17:11:43,554:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 17:11:43,562:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-09-12 17:11:43,664:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-09-12 17:11:43,703:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-09-12 17:11:43,704:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 17:11:43,706:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 17:11:43,707:INFO:Engine successfully changes for model 'en' to 'sklearn'.
+2023-09-12 17:11:43,798:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-09-12 17:11:43,842:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-09-12 17:11:43,843:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 17:11:43,845:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 17:11:43,936:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-09-12 17:11:43,974:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-09-12 17:11:43,975:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 17:11:43,977:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 17:11:43,977:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2023-09-12 17:11:44,069:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-09-12 17:11:44,116:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 17:11:44,118:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 17:11:44,211:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-09-12 17:11:44,251:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 17:11:44,253:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 17:11:44,253:INFO:Engine successfully changes for model 'svm' to 'sklearn'.
+2023-09-12 17:11:44,392:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 17:11:44,395:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 17:11:44,529:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 17:11:44,532:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 17:11:44,536:INFO:Preparing preprocessing pipeline...
+2023-09-12 17:11:44,536:INFO:Set up simple imputation.
+2023-09-12 17:11:44,638:INFO:Finished creating preprocessing pipeline.
+2023-09-12 17:11:44,642:INFO:Pipeline: Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temp', 'd_point', 'feels',
+                                             'min_temp', 'max_temp', 'prssr',
+                                             'hum', 'wind_spd', 'wind_deg',
+                                             'clouds', 'month', 'season',
+                                             'yearly_mean', 'monthly_mean',
+                                             'weekly_mean',
+                                             'lag_rain_1h_6_years_value'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent')))])
+2023-09-12 17:11:44,642:INFO:Creating final display dataframe.
+2023-09-12 17:11:44,890:INFO:Setup _display_container:                     Description             Value
+0                    Session id                42
+1                        Target           rain_1h
+2                   Target type        Regression
+3           Original data shape      (289272, 17)
+4        Transformed data shape      (289272, 17)
+5   Transformed train set shape      (202490, 17)
+6    Transformed test set shape       (86782, 17)
+7              Numeric features                16
+8                    Preprocess              True
+9               Imputation type            simple
+10           Numeric imputation              mean
+11       Categorical imputation              mode
+12               Fold Generator             KFold
+13                  Fold Number                10
+14                     CPU Jobs                -1
+15                      Use GPU             False
+16               Log Experiment             False
+17              Experiment Name  reg-default-name
+18                          USI              e4e7
+2023-09-12 17:11:45,040:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 17:11:45,042:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 17:11:45,186:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-09-12 17:11:45,188:INFO:Soft dependency imported: catboost: 1.2
+2023-09-12 17:11:45,189:INFO:setup() successfully completed in 2.66s...............
+2023-09-12 17:11:45,196:INFO:Initializing create_model()
+2023-09-12 17:11:45,196:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7f4046a4ae00>, estimator=catboost, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-09-12 17:11:45,196:INFO:Checking exceptions
+2023-09-12 17:11:45,223:INFO:Importing libraries
+2023-09-12 17:11:45,224:INFO:Copying training dataset
+2023-09-12 17:11:45,289:INFO:Defining folds
+2023-09-12 17:11:45,289:INFO:Declaring metric variables
+2023-09-12 17:11:45,293:INFO:Importing untrained model
+2023-09-12 17:11:45,297:INFO:CatBoost Regressor Imported successfully
+2023-09-12 17:11:45,306:INFO:Starting cross validation
+2023-09-12 17:11:45,313:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-09-12 17:11:50,979:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:231: UserWarning: Persisting input arguments took 0.60s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_transformer = self._memory_fit(
+
+2023-09-12 17:11:51,601:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:238: UserWarning: Persisting input arguments took 0.71s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
