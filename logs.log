@@ -8705,3 +8705,12 @@ Increase the number of iterations (max_iter) or scale the data as shown in:
 2023-09-12 17:11:51,601:WARNING:/home/rayhanadi/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:238: UserWarning: Persisting input arguments took 0.71s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
   X, y = self._memory_transform(
 
+2023-09-12 17:15:07,162:INFO:Calculating mean and std
+2023-09-12 17:15:07,164:INFO:Creating metrics dataframe
+2023-09-12 17:15:07,175:INFO:Finalizing model
+2023-09-12 17:15:19,679:INFO:Uploading results into container
+2023-09-12 17:15:19,680:INFO:Uploading model into container now
+2023-09-12 17:15:19,690:INFO:_master_model_container: 1
+2023-09-12 17:15:19,691:INFO:_display_container: 2
+2023-09-12 17:15:19,691:INFO:<catboost.core.CatBoostRegressor object at 0x7f402f3d5ea0>
+2023-09-12 17:15:19,691:INFO:create_model() successfully completed......................................
